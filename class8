@@ -6,4 +6,18 @@ more - see content of folder
 tail -1f 1.txt (foloow the first line intarctive)
 seq 100 - (print the numbers from 0 --100 to console)
 umask - setup premessions on file / folder
-
+tar cvf my.tar . (all files in the folder tar it)
+tar xvf..
+tar xvfz will extract tar.gzfile
+tar cvfz will compress tar.gz file
+chmod u+rw = give the user read and write premissions
+chmod u-rw = 
+chmod -rwx file.txt  - take off all premissions
+4 -read
+2 - write
+1 - execude
+0 - no premissons
+777 open for user group and other all premissions.
+chmod 750 (i can do everything, my group can execude, all ppl that re not in our group can do noting)
+chown - change owner for a folder and everything under it,
+package manager:
