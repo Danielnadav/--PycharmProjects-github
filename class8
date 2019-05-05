@@ -21,3 +21,8 @@ chmod -rwx file.txt  - take off all premissions
 chmod 750 (i can do everything, my group can execude, all ppl that re not in our group can do noting)
 chown - change owner for a folder and everything under it,
 package manager:
+nmoon  - monitor system like htop
+vim - x (delete), shift x( delete and go back) (p -pate) (a to put thing as i and move one step forward), (fg -run it from the background -returb)
+ctrl z - move it background)
+view - like vim only for view as read only.
+
