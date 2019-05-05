@@ -1,0 +1,9 @@
+ls -ltr(saw the last modified file in the last list)
+cd - (Return last directory we were)
+head 4.txt (will see the last 10 lines)
+less  - see the lines from start
+more - see content of folder
+tail -1f 1.txt (foloow the first line intarctive)
+seq 100 - (print the numbers from 0 --100 to console)
+umask - setup premessions on file / folder
+
