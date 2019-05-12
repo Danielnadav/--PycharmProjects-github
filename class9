@@ -1,0 +1,21 @@
+docker file:
+explain what will be in this image
+FROM
+WORKDIR
+COPY
+EXPOSE 80
+ENV NAME World
+CMD ("pyhton", "app.py") (run app.py when comtainer start)
+Every command is a layer.
+
+once i run docker built - he uses from docker file.
+Image -is process in the opretion system.
+
+docker version
+docker pull<image name>
+docker run -itd --name <container_name><image_name>
+docker push <username/image_name>
+docker image
+docker rm <continer name or id>
+docker ps
+docker exec -it <continer name or id >
