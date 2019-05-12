@@ -14,8 +14,45 @@ Image -is process in the opretion system.
 docker version
 docker pull<image name>
 docker run -itd --name <container_name><image_name>
+command to run commands in the image
 docker push <username/image_name>
 docker image
 docker rm <continer name or id>
-docker ps
+docker ps - "saw what continers are runnning now"
 docker exec -it <continer name or id >
+ip a - will saw the ip's and interfaces
+
+docker inspect <continer name> 
+vagrant@vagrant-ubuntu-trusty-64:/home/python-image$ docker network inspect my-first-network 
+
+
+connect jenkins to docker plugin- - - -  Importent
+
+docker network:
+- create a user defined bridge network.
+- every continer will get internal IP address.
+- Service dicovery -automatic discovery using DNS is fully suported.
+- If you want connect machine to other one, we just expose the ports.
+
+docker network create my-first-network
+docker network ls
+docker continer run 
+connect 2 continers to one network
+
+
+docker build -t my-image . 
+The . saw the path between host and continer from where to take the script(in copy as well)...~
+
+
+
+
+
+docker push {registry URL} {repository Owner} (image name} { image Tag}
+declerative - -defined 
+
+
+docker network create wordpress - - create new network
+docker container run --name mysql-container --rm --network wordpress -e MYSQL_ROOT_PASSWORD=wordpress -d mysql:5.7
+docker container run --name wordpress-container --rm --network wordpress -e WORDPRESS_DB_HOST=mysql-container -e WORDPRESS_DB_PASSWORD=wordpress -p 8090:80 -d wordpress
+/var/lib/images - whwre docker save images
+
